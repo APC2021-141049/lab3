@@ -1,0 +1,14 @@
+https://stackoverflow.com/questions/3250790/making-a-div-that-covers-the-entire-page
+https://www.pinterest.ph/pin/792211390679253802/
+https://css-tricks.com/snippets/css/typewriter-effect/
+https://stackoverflow.com/questions/1265887/call-javascript-function-on-hyperlink-click
+https://stackoverflow.com/questions/12991164/maintaining-the-final-state-at-end-of-a-css3-animation
+https://blog.hubspot.com/website/css-fade-in
+https://www.tutorialspoint.com/How-to-delay-a-JavaScript-function-call-using-JavaScript#:~:text=To%20provide%20delay%20in%20JavaScript,things%20of%20setTimeout()%20function.
+https://stackoverflow.com/questions/36990273/javascript-two-identical-functions-one-will-not-work
+https://www.freecodecamp.org/news/how-to-open-a-link-in-a-new-tab/#:~:text=You%20can%20use%20the%20target,opening%20anchor%20tag%20like%20this.
+https://www.flaticon.com/free-icon/instagram-logo_87390
+https://1000logos.net/soundcloud-logo/
+https://www.flaticon.com/free-icon/facebook-logo-in-circular-shape_44646
+https://www.w3schools.com/jsref/met_audio_pause.asp
+https://stackoverflow.com/questions/33757049/how-to-add-a-id-tag-in-php-output#:~:text=You%20need%20to%20enclose%20(wrap,give%20id%20to%20that%20div.&text=Also%2C%20no%20need%20for%20brackets,language%20construct%2C%20not%20a%20function.

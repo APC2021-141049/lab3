@@ -1,6 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<body>
-Welcome to the Home Page. I am Sean Aldrich Arceo
-</body>
+Welcome to the Home Page!
 </html>

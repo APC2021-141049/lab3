@@ -1,0 +1,918 @@
+/* Pre-Functions */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Barlow:wght@100;400&display=swap');
+
+html{
+	overflow: hidden;
+}
+body{
+	position: fixed;
+	width: 1920px;
+	height: 1080px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.error{
+	color: pink;
+	font-family: 'Barlow', sans-serif;
+	font-size: 12px;
+	overflow: hidden;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 5s;
+}
+.intro_body_tab div:target {
+	display: block;
+}
+/* Intro */
+#intro_content1{
+	position: relative;
+	left: 5%;
+	top: 2%;
+	overflow: hidden;
+}
+#profile_picture{
+	float: left;
+	padding-right: 20px;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 1s;
+}
+#intro_content2{
+	position: relative;
+	right: 5%;
+	top: 5%;
+	overflow: hidden;
+}
+#apc_picture{
+	float: right;
+	padding-left: 20px;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 2s;
+}
+#intro_content3{
+	position: relative;
+	left: 5%;
+	top: 8%;
+	overflow: hidden;
+}
+#fl_picture{
+	float: left;
+	padding-right: 20px;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 3s;
+}
+#first_line{
+	font-family: 'Anonymous Pro', monospace;
+	font-size: 36px;
+	color: white;
+	text-align: left;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 1.25s;
+}
+#second_line{
+	font-family: 'Barlow', sans-serif;
+	font-size: 26px;
+	color: white;
+	text-align: left;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 1.75s;
+}
+#first_line2{
+	font-family: 'Anonymous Pro', monospace;
+	font-size: 36px;
+	color: white;
+	text-align: right;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 2.25s;
+}
+#second_line2{
+	font-family: 'Barlow', sans-serif;
+	font-size: 26px;
+	color: white;
+	text-align: right;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 2.75s;
+}
+#first_line3{
+	font-family: 'Anonymous Pro', monospace;
+	font-size: 36px;
+	color: white;
+	text-align: left;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 3.25s;
+}
+#second_line3{
+	font-family: 'Barlow', sans-serif;
+	font-size: 26px;
+	color: white;
+	text-align: left;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 3.75s;
+}
+#intro_body_main{
+	opacity:1;
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+	background-image: url("image/personal_background.png");
+}
+#main_body_main{
+	opacity:1;
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+	background-image: url("image/personal_background2.png");
+	display: none;
+	animation: fadeOutBG 2s linear 0s 1 normal forwards, removeContent 2s linear 0s 1 normal forwards;
+}
+#main_body_true{
+	opacity:1;
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+	background-image: url("image/personal_background3.png");
+	display: none;
+	animation: fadeInBG 2s linear 0s 1 normal forwards, addContent 2s linear 0s 1 normal forwards;
+}
+/* Intro Link */
+#intro_body_link{
+	position: relative;
+    top: 49%;
+	left: 47%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: white;
+	animation: blinkTextCursor 1000ms steps(44) infinite normal;
+}
+#intro_body_link:active{
+	text-decoration: none;
+}
+#intro_body_link:hover{
+	text-decoration: none;
+}
+#intro_body_link:link{
+	text-decoration: none;
+}'
+#intro_body_link:visited{
+	text-decoration: none;
+}
+#true_intro_link{
+	position: fixed;
+    top: 90%;
+	left: 10%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: white;
+	display: none;
+	letter-spacing: 1px;
+	animation: typewriter3 2s steps(19) 0.3s 1 normal both, blinkTextCursor 1000ms steps(19) infinite normal;
+	background-size: cover;
+}
+#true_intro_link:active{
+	text-decoration: none;
+}
+#true_intro_link:hover{
+	text-decoration: none;
+}
+#true_intro_link:link{
+	text-decoration: none;
+}
+#true_intro_link:visited{
+	text-decoration: none;
+}
+/* Main Link */
+#main_body_link{
+	position: relative;
+    top: 49%;
+	left: 48%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: black;
+	animation: blinkTextCursor2 1000ms steps(44) infinite normal;
+}
+#main_body_link:active{
+	text-decoration: none;
+}
+#main_body_link:hover{
+	text-decoration: none;
+}
+#main_body_link:link{
+	text-decoration: none;
+}
+#main_body_link:visited{
+	text-decoration: none;
+}
+/* Gallery Link */
+#true_gallery_link{
+	position: fixed;
+    top: 95%;
+	left: 44%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: white;
+	display: none;
+	letter-spacing: 1px;
+	animation: typewriter 2s steps(13) 0.3s 1 normal both, blinkTextCursor 1000ms steps(13) infinite normal;
+	background-size: cover;
+}
+#true_gallery_link:active{
+	text-decoration: none;
+}
+#true_gallery_link:hover{
+	text-decoration: none;
+}
+#true_gallery_link:link{
+	text-decoration: none;
+}
+#true_gallery_link:visited{
+	text-decoration: none;
+}
+#true_gallery_link2{
+	position: fixed;
+    top: 95%;
+	left: 10%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: white;
+	display: none;
+	letter-spacing: 1px;
+	animation: typewriter4 2s steps(13) 0.3s 1 normal both, blinkTextCursor 1000ms steps(13) infinite normal;
+	background-size: cover;
+}
+#true_gallery_link2:active{
+	text-decoration: none;
+}
+#true_gallery_link2:hover{
+	text-decoration: none;
+}
+#true_gallery_link2:link{
+	text-decoration: none;
+}
+#true_gallery_link2:visited{
+	text-decoration: none;
+}
+#main_body_link2{
+	position: relative;
+    top: 49%;
+	left: 46%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: black;
+	animation: blinkTextCursor2 1000ms steps(44) infinite normal;
+}
+#main_body_link2:active{
+	text-decoration: none;
+}
+#main_body_link2:hover{
+	text-decoration: none;
+}
+#main_body_link2:link{
+	text-decoration: none;
+}
+#main_body_link2:visited{
+	text-decoration: none;
+}
+#gallery_body_main{
+	opacity:1;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+	background-image: url("image/personal_background2.png");
+	display: none;
+	animation: fadeOutBG2 2s linear 0s 1 normal forwards, removeContent2 2s linear 0s 1 normal forwards;
+}
+#gallery_body_true{
+	opacity:1;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+	background-image: url("image/personal_background3.png");
+	display: none;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards, addContent2 2s linear 0s 1 normal forwards;
+}
+#link_line{
+	font-family: 'Barlow', sans-serif;
+	font-size: 18px;
+	color: white;
+	text-align: right;
+}
+#link_line:active{
+	text-decoration: none;
+}
+#link_line:hover{
+	text-decoration: none;
+}
+#link_line:link{
+	text-decoration: none;
+}
+#link_line:visited{
+	text-decoration: none;
+}
+#link_line_mum{
+	font-family: 'Barlow', sans-serif;
+	font-size: 18px;
+	color: white;
+	text-align: right;
+}
+#link_line_mum:active{
+	text-decoration: none;
+}
+#link_line_mum:hover{
+	text-decoration: none;
+}
+#link_line_mum:link{
+	text-decoration: none;
+}
+#link_line_mum:visited{
+	text-decoration: none;
+}
+#link_line_port{
+	font-family: 'Barlow', sans-serif;
+	font-size: 18px;
+	color: white;
+	text-align: right;
+}
+#link_line_port:active{
+	text-decoration: none;
+}
+#link_line_port:hover{
+	text-decoration: none;
+}
+#link_line_port:link{
+	text-decoration: none;
+}
+#link_line_port:visited{
+	text-decoration: none;
+}
+#fb_picture{
+	float: left;
+	padding-right: 15px;
+}
+#soundcloud_picture{
+	float: left;
+	padding-right: 15px;
+}
+#fbimg_picture{
+	float: left;
+	padding-right: 15px;
+}
+#mumei_picture{
+	float: left;
+	padding-right: 15px;
+}
+#porter_picture{
+	float: left;
+	padding-right: 15px;
+}
+#works1{
+	position: relative;
+	left: 2%;
+	top: 2%;
+	text-align: left;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 1s;
+}
+#works2{
+	position: relative;
+	text-align: left;
+	top: 6%;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 1.25s;
+}
+#works3{
+	position: relative;
+	text-align: left;
+	left: -2%;
+	top: 10.5%;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 1.5s;
+}
+#works4{
+	position: relative;
+	text-align: left;
+	left: -3.5%;
+	top: 14.5%;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 1.75s;
+}
+#works5{
+	position: relative;
+	text-align: left;
+	left: -5%;
+	top: 19%;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 2s;
+}
+#works6{
+	position: relative;
+	text-align: left;
+	left: -6.5%;
+	top: 24%;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 2.25s;
+}
+#works7{
+	position: relative;
+	text-align: left;
+	left: -8%;
+	top: 28.5%;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 2.5s;
+}
+#works8{
+	position: relative;
+	text-align: left;
+	left: -9.5%;
+	top: 33%;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 2.75s;
+}
+#works9{
+	position: relative;
+	text-align: left;
+	left: -11%;
+	top: 37.5%;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 3s;
+}
+#works10{
+	position: relative;
+	text-align: left;
+	left: -12.5%;
+	top: 40%;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 3.25s;
+}
+/* References Link */
+#true_refer_link{
+	position: fixed;
+    top: 90%;
+	right: 10%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: white;
+	display: none;
+	letter-spacing: 1px;
+	animation: typewriter2 2s steps(16) 0.3s 1 normal both, blinkTextCursor 1000ms steps(16) infinite normal;
+	background-size: cover;
+}
+#true_refer_link:active{
+	text-decoration: none;
+}
+#true_refer_link:hover{
+	text-decoration: none;
+}
+#true_refer_link:link{
+	text-decoration: none;
+}
+#true_refer_link:visited{
+	text-decoration: none;
+}
+#true_refer_link2{
+	position: fixed;
+    top: 90%;
+	left: 43%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: white;
+	display: none;
+	letter-spacing: 1px;
+	animation: typewriter2 2s steps(16) 0.3s 1 normal both, blinkTextCursor 1000ms steps(16) infinite normal;
+	background-size: cover;
+}
+#true_refer_link2:active{
+	text-decoration: none;
+}
+#true_refer_link2:hover{
+	text-decoration: none;
+}
+#true_refer_link2:link{
+	text-decoration: none;
+}
+#true_refer_link2:visited{
+	text-decoration: none;
+}
+#refer_body_main{
+	opacity:1;
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+	background-image: url("image/personal_background2.png");
+	display: none;
+	animation: fadeOutBG 2s linear 0s 1 normal forwards, removeContent 2s linear 0s 1 normal forwards;
+}
+#refer_body_true{
+	opacity:1;
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+	background-image: url("image/personal_background3.png");
+	display: none;
+	animation: fadeInBG 2s linear 0s 1 normal forwards, addContent 2s linear 0s 1 normal forwards;
+}
+#main_body_link3{
+	position: relative;
+    top: 49%;
+	left: 45%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: black;
+	animation: blinkTextCursor2 1000ms steps(44) infinite normal;
+}
+#main_body_link3:active{
+	text-decoration: none;
+}
+#main_body_link3:hover{
+	text-decoration: none;
+}
+#main_body_link3:link{
+	text-decoration: none;
+}
+#main_body_link3:visited{
+	text-decoration: none;
+}
+#link_line_ref{
+	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	text-align: center;
+}
+#link_line_ref:active{
+	text-decoration: none;
+}
+#link_line_ref:hover{
+	text-decoration: none;
+}
+#link_line_ref:link{
+	text-decoration: none;
+}
+#link_line_ref:visited{
+	text-decoration: none;
+}
+#link_line_guest{
+	font-family: 'Barlow', sans-serif;
+	font-size: 20px;
+	color: #FBC8FF;
+}
+#link_line_guest:active{
+	text-decoration: none;
+}
+#link_line_guest:hover{
+	text-decoration: none;
+}
+#link_line_guest:link{
+	text-decoration: none;
+}
+#link_line_guest:visited{
+	text-decoration: none;
+}
+#works_ref{
+	position: relative;
+	top: 2%;
+	text-align: center;
+	opacity: 0;
+	animation: fadeInBG 4s linear 0s 1 normal forwards;
+	animation-delay: 2s;
+}
+/* Forms Page */
+#true_forms_link{
+	position: fixed;
+    top: 95%;
+	right: 10%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: white;
+	display: none;
+	letter-spacing: 1px;
+	animation: typewriter5 2s steps(11) 0.3s 1 normal both, blinkTextCursor 1000ms steps(11) infinite normal;
+	background-size: cover;
+}
+#true_forms_link:active{
+	text-decoration: none;
+}
+#true_forms_link:hover{
+	text-decoration: none;
+}
+#true_forms_link:link{
+	text-decoration: none;
+}
+#true_forms_link:visited{
+	text-decoration: none;
+}
+#main_body_link4{
+	position: relative;
+    top: 49%;
+	left: 47%;
+	right: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+	font-family: 'Anonymous Pro', monospace;
+	color: black;
+	animation: blinkTextCursor2 1000ms steps(44) infinite normal;
+}
+#main_body_link4:active{
+	text-decoration: none;
+}
+#main_body_link4:hover{
+	text-decoration: none;
+}
+#main_body_link4:link{
+	text-decoration: none;
+}
+#main_body_link4:visited{
+	text-decoration: none;
+}
+#form_body_main{
+	opacity:1;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+	background-image: url("image/personal_background2.png");
+	display: none;
+	animation: fadeOutBG2 2s linear 0s 1 normal forwards, removeContent2 2s linear 0s 1 normal forwards;
+}
+#form_body_true{
+	opacity:1;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+	background-image: url("image/personal_background3.png");
+	display: none;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards, addContent2 2s linear 0s 1 normal forwards;
+}
+/* Main Form 1 */
+#main_Form_1{
+	position: fixed;
+	top: 2%;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+#main_Form_1_2{
+	position: relative;
+	text-align: center;
+	font-family: 'Anonymous Pro', monospace;
+	color: white;
+	font-size: 26px;
+	overflow: hidden;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 4s;
+}
+#main_Form_1_3{
+	position: relative;
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	color: white;
+	font-size: 18px;
+	overflow: hidden;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 4.5s;
+}
+#main_Form_L1{
+	font-family: 'Anonymous Pro', monospace;
+	color: white;
+	font-size: 42px;
+	overflow: hidden;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 2s;
+	
+}
+#main_form1_true{
+	font-family: 'Barlow', sans-serif;
+	color: white;
+	font-size: 18px;
+	overflow: hidden;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 3s;
+}
+#main_Form_gender{
+	color: #7a7a7a;
+}
+#text_form1{
+	border:3px groove;
+	border-color: #b7b7b7;
+	background-color: #2e2e2e;
+	font-family: 'Barlow', sans-serif;
+	color: white;
+	font-size: 18px;
+}
+#submit_form1{
+	border:3px groove;
+	border-color: #b7b7b7;
+	background-color: #2e2e2e;
+	font-family: 'Barlow', sans-serif;
+	color: white;
+	font-size: 18px;
+}
+#link_guests{
+	position: relative;
+	text-align: center;
+	font-family: 'Barlow', sans-serif;
+	color: pink;
+	font-size: 18px;
+	overflow: hidden;
+	opacity: 0;
+	animation: fadeInBG2 2s linear 0s 1 normal forwards;
+	animation-delay: 5.5s;
+}
+#link_guests:active{
+	text-decoration: none;
+}
+#link_guests:hover{
+	text-decoration: none;
+}
+#link_guests:link{
+	text-decoration: none;
+}
+#link_guests:visited{
+	text-decoration: none;
+}
+/* Animation */
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+@keyframes blinkTextCursor2{
+  from{border-right-color: rgba(0,0,0,.75);}
+  to{border-right-color: transparent;}
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 7.55em;}
+}
+@keyframes typewriter2{
+  from{width: 0;}
+  to{width: 9.35em;}
+}
+@keyframes typewriter3{
+  from{width: 0;}
+  to{width: 11.10em;}
+}
+@keyframes typewriter4{
+  from{width: 0;}
+  to{width: 7.55em;}
+}
+@keyframes typewriter5{
+  from{width: 0;}
+  to{width: 6.35em;}
+}
+@keyframes fadeOutBG{
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
+
+@keyframes removeContent{
+  from{display: block;}
+  to{display: none;}
+}
+@keyframes fadeInBG{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes addContent{
+  from{display: none;}
+  to{display: block;}
+}
+@keyframes fadeOutBG2{
+  from{opacity: 1;}
+  to{opacity: 0;}
+}
+@keyframes removeContent2{
+  from{display: block;}
+  to{display: none;}
+}
+@keyframes fadeInBG2{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+@keyframes addContent2{
+  from{display: none;}
+  to{display: block;}
+}
