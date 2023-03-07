@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="guests_style.css" />
 <h2><?= esc($title) ?></h2>
 
 <?php if (! empty($news) && is_array($news)): ?>
