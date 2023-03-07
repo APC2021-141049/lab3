@@ -11,15 +11,19 @@ html{
 }
 h2{
 	font-family: 'Anonymous Pro', monospace;
-	padding-left: 20px;
+	padding-left: 50px;
 }
 h3{
 	font-family: 'Anonymous Pro', monospace;
-	padding-left: 20px;
+	padding-left: 50px;
 }
 .main{
 	font-family: 'Barlow', sans-serif;
-	padding-left: 20px;
+	padding-left: 50px;
+}
+p{
+	font-family: 'Barlow', sans-serif;
+	padding-left: 50px;
 }
 a{
 	font-family: 'Barlow', sans-serif;
