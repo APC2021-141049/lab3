@@ -11,16 +11,20 @@ html{
 }
 h2{
 	font-family: 'Anonymous Pro', monospace;
+	padding-left: 10px;
 }
 h3{
 	font-family: 'Anonymous Pro', monospace;
+	padding-left: 10px;
 }
 #main{
 	font-family: 'Barlow', sans-serif;
+	padding-left: 10px;
 }
 a{
 	font-family: 'Barlow', sans-serif;
 	color: gray;
+	padding-left: 10px;
 }
 a:active{
 	text-decoration: none;
