@@ -5,7 +5,7 @@
 html{
 	overflow: hidden;
 	background-image: url("image/personal_background3.png");
-	background-repeat: no-repeat;
+	background-repeat: repeat-y;
 	background-size: cover;
 	color: white;
 }
@@ -14,6 +14,10 @@ h2{
 	padding-left: 50px;
 }
 h3{
+	font-family: 'Anonymous Pro', monospace;
+	padding-left: 50px;
+}
+#newsform{
 	font-family: 'Anonymous Pro', monospace;
 	padding-left: 50px;
 }
@@ -42,3 +46,10 @@ a:link{
 a:visited{
 	text-decoration: none;
 }
+#submitformnews{
+	border:3px groove;
+	border-color: #b7b7b7;
+	background-color: #2e2e2e;
+	font-family: 'Barlow', sans-serif;
+	color: white;
+	font-size: 18px;

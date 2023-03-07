@@ -1,5 +1,6 @@
 <link rel="stylesheet" type="text/css" href="news_style.css" />
 <link rel="icon" href="image/profile_picture.png" />
+
 <h2><?= esc($title) ?></h2>
 
 <?php if (! empty($news) && is_array($news)): ?>
