@@ -15,8 +15,12 @@ h2{
 h3{
 	font-family: 'Anonymous Pro', monospace;
 }
+#main{
+	font-family: 'Barlow', sans-serif;
+}
 a{
 	font-family: 'Barlow', sans-serif;
+	color: gray;
 }
 a:active{
 	text-decoration: none;
