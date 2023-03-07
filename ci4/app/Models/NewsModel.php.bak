@@ -6,8 +6,8 @@ use CodeIgniter\Model;
 
 class NewsModel extends Model
 {
-    protected $table = 'searceo_news';
-}
+protected $table = 'searceo_news';
+	
 public function getNews($slug = false)
     {
         if ($slug === false) {
@@ -16,3 +16,4 @@ public function getNews($slug = false)
 
         return $this->where(['slug' => $slug])->first();
     }
+}
