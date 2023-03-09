@@ -1,12 +1,14 @@
+
 <link rel="stylesheet" type="text/css" href="news_style.css" />
 <link rel="icon" href="image/profile_picture.png" />
+
 <h2><?= esc($title) ?></h2>
 
 <?= session()->getFlashdata('error') ?>
 <?= validation_list_errors() ?>
 
 <div id="newsform">
-<form action="/news/create" method="post">
+<form action="create" method="post">
     <?= csrf_field() ?>
 
     <label for="title">Title</label>

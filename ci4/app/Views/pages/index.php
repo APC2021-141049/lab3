@@ -251,9 +251,9 @@ echo "<br>$gender...";
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") 
 {
-	$servername = "localhost";
+	$servername = "192.168.150.213";
 	$username = "webprogss211";
-	$password = "webprogss211";
+	$password = "fancyR!ce36";
 	$dbname = "webprogss211";
 
 	$conn = new mysqli($servername, $username, $password, $dbname);
@@ -274,7 +274,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	$conn->close();
 }
 ?>
-	<a href="guest/guestlist.php" target="_blank" id="link_guests"><br>> guests list.<br></a>
+	<a href="guests.php" target="_blank" id="link_guests"><br>> guests list.<br></a>
 </div>
 	<a href="#referencesr" id="true_refer_link2">> to references.</a>
 </div>
