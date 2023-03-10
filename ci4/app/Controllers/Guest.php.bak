@@ -1,0 +1,39 @@
+<?php
+
+namespace App\Controllers;
+
+use App\Models\GuestModel;
+
+class Guest extends BaseController
+{
+    public function index()
+    {
+        $model = model(GuestModel::class);
+
+        $data = [
+            'email'  => $model->getGuest(),
+            'title' => 'News archive',
+        ];
+
+        return view('templates/header', $data)
+            . view('pages/list')
+            . view('templates/footer');
+    }
+
+    public function view($slug = null)
+    {
+        $model = model(GuestModel::class);
+
+        $data['email'] = $model->getGuest($slug);
+
+        if (empty($data['email'])) {
+            throw new PageNotFoundException('Cannot find the guest: ' . $slug);
+        }
+
+        $data['name'] = $data['email']['name'];
+
+        return view('templates/header', $data)
+            . view('pages/list')
+            . view('templates/footer');
+    }
+}

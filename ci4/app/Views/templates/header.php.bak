@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
 <head>
-<?php echo link_tag('public/css/mainstyle.css'); ?>
+<link rel="stylesheet" type="text/css" href="news_style.css" />
+<link rel="icon" href="image/profile_picture.png" />
 </head>
 <body>

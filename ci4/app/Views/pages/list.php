@@ -9,9 +9,9 @@
 
 <div id="main_guest">
 <?php
-$servername = "192.168.150.213";
+$servername = "localhost";
 $username = "webprogss211";
-$password = "fancyR!ce36";
+$password = "webprogss211";
 $dbname = "webprogss211";
 
 // Create connection
@@ -21,13 +21,13 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, fullname, email, comment, FROM searceo_guestlist";
+$sql = "SELECT id, fullname, email FROM searceo_guestlist";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "<br> id number: ". $row["id"]. "<br>name: ". $row["fullname"] .$row["comment"]. "<br>comments: ". "<br>";
+        echo "<br> id number: ". $row["id"]. "<br>name: ". $row["fullname"] . "<br>";
     }
 } else {
     echo "0 results";

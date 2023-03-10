@@ -33,7 +33,11 @@ $routes->get('/', 'Home::index');
 
 use App\Controllers\News;
 use App\Controllers\Pages;
+use App\Controllers\Guest;
 
+$routes->match(['get', 'post'], 'pages/main', [Guest::class, 'main']);
+$routes->get('pages/(:segment)', [Guest::class, 'view']);
+$routes->get('pages', [Guest::class, 'list']);
 $routes->match(['get', 'post'], 'news/create', [News::class, 'create']);
 $routes->get('news/(:segment)', [News::class, 'view']);
 $routes->get('news', [News::class, 'index']);

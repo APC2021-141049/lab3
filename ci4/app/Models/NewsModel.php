@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class NewsModel extends Model
 {
-    protected $table = 'searceo_news';
+    protected $table = 'searceo_guest';
 
     protected $allowedFields = ['title', 'slug', 'body'];
 	

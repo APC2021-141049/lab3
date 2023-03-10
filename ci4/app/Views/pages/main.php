@@ -190,7 +190,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 		}    
 	}
 
-	if (empty($_POST["comment"])) {
+	if (empty($_POST["comments"])) {
 		$comment = "";
 	} else {
 		$comment = test_input($_POST["comment"]);
@@ -210,9 +210,12 @@ function test_input($data) {
   return $data;
 }
 ?>
+<?= session()->getFlashdata('error') ?>
+<?= validation_list_errors() ?>
 <div id="main_Form_1">
 <p id="main_Form_L1">who are you.</p>
 <p><span class="error">ones marked with * are required</span></p>
+<?= csrf_field() ?>
 <form id="main_form1_true" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
   your name.<br> <input id="text_form1" type="text" name="name">
   <span class="error">* <?php echo $nameErr;?></span>
@@ -245,7 +248,7 @@ echo "<br>you are.<br><br>";
 echo "$name...";
 echo "<br>$email...";
 echo "<br>$website...";
-echo "<br>'$comment' is what you said...";
+echo "<br>'$comments' is what you said...";
 echo "<br>$gender...";
 ?>
 <?php
@@ -262,8 +265,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	die("Connection failed: " . $conn->connect_error);
 	}
 
-	$sql = "INSERT INTO searceo_guestlist (fullname, email, website, gender)
-	VALUES ('$name', '$email', '$website', '$gender')";
+	$sql = "INSERT INTO searceo_guestlist (name, email, website, comments, gender)
+	VALUES ('$name', '$email', '$website', '$comments', '$gender')";
 
 	if ($conn->query($sql) === TRUE) {
 	echo "<br><br>hello. $name";
@@ -274,7 +277,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
 	$conn->close();
 }
 ?>
-	<a href="guests.php" target="_blank" id="link_guests"><br>> guests list.<br></a>
+	<a href="list" target="_blank" id="link_guests"><br>> guests list.<br></a>
 </div>
 	<a href="#referencesr" id="true_refer_link2">> to references.</a>
 </div>

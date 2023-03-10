@@ -1,9 +1,5 @@
 <link rel="stylesheet" type="text/css" href="news_style.css" />
 <link rel="icon" href="image/profile_picture.png" />
-<?php
-
-$db = \Config\Database::connect(); 
-?>
 
 <h2><?= esc($title) ?></h2>
 

@@ -12,14 +12,12 @@
         <div class="main">
             <?= esc($news_item['body']) ?>
         </div>
-        <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">View article</a></p>
+        <p><a href="/news/<?= esc($news_item['slug'], 'url') ?>">View website</a></p>
 
     <?php endforeach ?>
 
 <?php else: ?>
 
-    <h3>No News</h3>
-
-    <p>Unable to find any news for you.</p>
+    <h3>No Guests</h3>
 
 <?php endif ?>
