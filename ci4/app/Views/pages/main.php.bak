@@ -210,8 +210,6 @@ function test_input($data) {
   return $data;
 }
 ?>
-<?= session()->getFlashdata('error') ?>
-<?= validation_list_errors() ?>
 <div id="main_Form_1">
 <p id="main_Form_L1">who are you.</p>
 <p><span class="error">ones marked with * are required</span></p>

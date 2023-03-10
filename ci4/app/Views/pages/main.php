@@ -160,7 +160,7 @@
 	<div id="form_body_true">
 <?php
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
-$name = $email = $gender = $comment = $website = "";
+$name = $email = $gender = $comments = $website = "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (empty($_POST["name"])) {
@@ -193,7 +193,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (empty($_POST["comments"])) {
 		$comment = "";
 	} else {
-		$comment = test_input($_POST["comment"]);
+		$comment = test_input($_POST["comments"]);
 	}
 
 	if (empty($_POST["gender"])) {
@@ -224,7 +224,7 @@ function test_input($data) {
   your website.<br> <input id="text_form1" type="text" name="website">
   <span class="error"><?php echo $websiteErr;?></span>
   <br><br>
-  do you want to talk?<br> <textarea id="text_form1" name="comment" rows="5" cols="40"></textarea>
+  do you want to talk?<br> <textarea id="text_form1" name="comments" rows="5" cols="40"></textarea>
   <br>
   your gender.<br><br>
   <div id="main_Form_gender">
